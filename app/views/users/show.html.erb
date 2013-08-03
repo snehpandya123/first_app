@@ -1,0 +1,16 @@
+
+
+<table class="profile" summary="Profile information">
+<tr>
+<td class="main">
+<h1>
+<%= image_tag("rails.png", :alt => "Sample App", :class => "round") %>
+<%= @usr.name %>
+</h1>
+</td>
+<td class="sidebar round">
+<strong>Name</strong> <%= @usr.name %><br />
+<strong>URL</strong> <%= link_to user_path(@user), @user %>
+</td>
+</tr>
+</table>

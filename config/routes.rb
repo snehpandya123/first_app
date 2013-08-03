@@ -1,6 +1,7 @@
 FirstApp::Application.routes.draw do
-  get "users/new"
+  resources:usrs
 
+  
   match '/contact', :to => 'pages#contact' 
   
   match '/about', :to => 'pages#about'
@@ -18,6 +19,12 @@ FirstApp::Application.routes.draw do
   get "pages/contact"
 
   get "pages/about"
+
+   get "users/new"
+
+   get "users/show"
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
